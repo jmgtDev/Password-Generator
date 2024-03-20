@@ -1,0 +1,10 @@
+.button{
+    color: white;
+    background-color: #1A1A1A;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}

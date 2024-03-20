@@ -1,0 +1,1 @@
+Criação de um Gerador de Senha simples, com função para copiar a senha para a área de transferência. Usei o state para conseguir modificar os elementos da página de forma dinâmica, sem precisar atualizar.

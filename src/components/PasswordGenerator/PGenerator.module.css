@@ -1,0 +1,19 @@
+.bgDiv{
+    background-color: #333333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDiv{
+    display: flex;
+    gap: 30px;
+}
+
+.password{
+    color: white;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
