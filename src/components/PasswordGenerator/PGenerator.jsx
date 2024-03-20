@@ -5,21 +5,20 @@ import styles from "./PGenerator.module.css"
 import { useState } from "react"
 
 export default function PGenerator(){
-    const [senhaVeia, setSenha] = useState("")
+    const [password, setPassword] = useState("")
     function generatePassword(){
-        let password = ""
+        let newPassword = ""
         for (let i = 0; i < 10; i++){
-        password += Math.floor(Math.random() * 10)
+        newPassword += Math.floor(Math.random() * 10)
         }
-        setSenha(password)
-        setCopiado("Copiar")
-        console.log(password)
-        return password
+        setPassword(newPassword)
+        setCopyText("Copiar")
+        return newPassword
     }
-    const [copiar, setCopiado] = useState("Copiar")
+    const [copyText, setCopyText] = useState("Copiar")
     function copy(){
-        window.navigator.clipboard.writeText(senhaVeia)
-        setCopiado("Copiado!")
+        window.navigator.clipboard.writeText(password)
+        setCopyText("Copiado!")
     }
 
     return (
@@ -28,9 +27,9 @@ export default function PGenerator(){
             <Title title="Gerador de Senhas"/>
             <div className={styles.buttonDiv}>
                 <Button innerText="Gerar!" event={generatePassword}></Button>
-                <Button innerText={copiar} event={copy}></Button>
+                <Button innerText={copyText} event={copy}></Button>
             </div>
-            <Password senha={senhaVeia}></Password>
+            <Password senha={password}></Password>
         </div>    
     </>
     )
